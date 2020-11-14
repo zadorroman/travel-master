@@ -1,0 +1,47 @@
+.spain {
+    padding-top: 1px;
+    background: url('../images/spain-1.jpg') no-repeat top center;
+    background-size: cover;
+
+    &--second {
+        background-image: url('../images/spain-2.jpg');
+    }
+
+
+    &__wrap {
+        margin-top: 230px;
+        padding: 30px;
+        margin-bottom: 100px;
+        background: rgba(35, 35, 35, .9);
+        max-width: 540px;
+        font-family: $font;
+
+        &--second {
+            margin-left: 570px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin: 50px 0 30px;
+        color: #e8e8e8;
+
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 50px;
+        line-height: 26px;
+        color: #e8e8e8;
+    }
+    &__btn {
+        margin-bottom: 50px;
+    }
+}

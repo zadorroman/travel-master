@@ -1,0 +1,52 @@
+.header {
+    background: url('../images/header.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+
+    &__wrap {
+        max-width: 1110px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        letter-spacing: 4.8px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        letter-spacing: 6.82px;
+        margin-bottom: 50px;
+    }
+    
+    &__search {
+        margin-bottom: 120px;
+    }
+    &__scroll {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: #fff;
+    }
+
+
+}

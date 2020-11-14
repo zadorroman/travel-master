@@ -1,0 +1,56 @@
+.icon-nav {
+    background: #333333;
+
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 70px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 120px;
+
+        &--dots {
+            position: relative;
+            &::before, &::after {
+                @include size(310px, 60px);
+                @include pos($t: -55px, $l: -245px);
+                content: '';
+                background: url('../images/dots.png')no-repeat center center;
+                background-size: cover;
+            }
+
+            &::after {
+                transform: translateX(35%);
+                left: 25px;
+            }
+        }
+    }
+
+    &__text {
+        font: 400 36px/26px $title;
+        color: #e8e8e8;
+    }
+    
+    &__icon {
+        font-size: 60px;
+        margin-bottom: 30px;
+
+        &--blue {
+            color: $lblue;
+        }
+        &--red {
+            color: #ff6363;
+        }
+
+        &--yblue {
+            color: #00a2ff;
+        }
+    }
+}

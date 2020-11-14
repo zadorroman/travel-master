@@ -1,0 +1,6 @@
+.navigation {
+    @include size(100%, 80px);
+    background: $lblue;
+    line-height: 80px;
+    color: #fff;
+}

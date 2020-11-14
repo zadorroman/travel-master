@@ -1,0 +1,40 @@
+.button {
+	@include size(225px, 60px);
+
+	background-color: $lblue;
+	transition: all .5s;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+
+
+
+
+	&__text {
+		@include size(225px);
+		@include pos($t: 0, $l: 0);
+		color: #fff;
+		position: absolute;
+		padding: 20px 20px;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		font: 400 16px $title;
+		letter-spacing: 1.2px;
+	}
+	&::before {
+		content: '';
+
+		@include size(100px, 60px);
+		@include pos($t: 0, $l: 0);
+		text-transform: uppercase;
+		border-right: 70px solid transparent;
+		border-bottom: 60px solid #496bfe;
+		transition: all .5s;
+	}
+
+	&:hover::before  {
+		width: 300px;
+		border-bottom: 60px solid #496bfe;
+	}
+}

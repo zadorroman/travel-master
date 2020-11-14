@@ -1,0 +1,40 @@
+.footer {
+    background: #232323;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 1px;
+    flex-shrink: 0;
+
+    &__logo {
+        margin-top: 120px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        margin-bottom: 25px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 50px;
+
+    }
+
+    &__container {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    &__item {
+        font-size: 18px;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            color: $lblue;
+        }
+        
+    }
+}

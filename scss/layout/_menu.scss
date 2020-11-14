@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__link {
+        font: 400 14px/26px $title;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s;
+
+
+        
+    }
+
+    &__item  {
+        transition: all .3s;
+
+        &:hover .menu__link  {
+            text-shadow: 0 0 5px #000;
+        }
+    }
+}
